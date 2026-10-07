@@ -1,6 +1,9 @@
 name: cloudsmith-dyn-map-test
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - 'trigger.txt'
 
 permissions:
   id-token: write
